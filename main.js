@@ -6,9 +6,12 @@ let Circle = function (radius) {
     this.getArea = function () {
         return Math.PI * radius * radius;
     }
+    this.getCircuit=function () {
+        return Math.PI*2*radius;
+    }
 }
-let circle = new Circle(2);
+let circle = new Circle(5);
 let radius = circle.getradius(); // 2
-
+let circuit=circle.getCircuit();
 let area = circle.getArea();
-alert("radius: " + radius + "; area: " + area);
+alert("radius: " + radius + "; area: " + area+"; circuit: "+circuit);
